@@ -13,10 +13,17 @@ const userLastName = prompt('Inserisci il cognome');
 //prompt colore-salvo in una variabile userFavoriteColor
 const userFavoriteColor = prompt ('Inserisci colore preferito');
 
-currentText = `${currentText}${userName}${userLastName}${userFavoriteColor}`;
+//Bonus2 Random number
+let userRondomNumber = Math.floor((Math.random() * 100) + 1);
+
+currentText = `${currentText}${userName}${userLastName}${userFavoriteColor}${userRondomNumber}`;
 
 //Scrivo nel browser
 currentElement.innerHTML = currentText;
+
+// Bonus1 Scrivo nel browser
+
+console.log(currentText);
 
 
 
